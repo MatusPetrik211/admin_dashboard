@@ -1,3 +1,10 @@
+:root {
+    --white-blue: #eff6ff;
+    --grey-blue: #5b6366;
+    --blue: #0ea5e9;
+    --yellow: #fcd34d;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +16,7 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
+    min-width: 1000px;
 }
 
 header {
@@ -44,6 +52,7 @@ header {
 .header-bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
     height: 60px;
 }
 
@@ -110,5 +119,76 @@ aside {
 }
 
 main {
-    background-color: crimson;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
+
+.header-main {
+    margin-bottom: 10px;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: aquamarine;
+    height: 250px;
+    border-radius: 20px;
+    border-left: 10px rgb(110, 0, 0) solid;
+    padding: 15px 20px;
+}
+
+.project-header {
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 18px;
+}
+
+.ann-container {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 25px;
+    height: auto;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(162, 162, 162);
+    margin: 12px auto;
+}
+
+.ann-header {
+    margin-bottom: 10px;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-content: space-evenly;
+
+    background-color: aqua;
+    border-radius: 20px;
+    height: 80%;
+}
+
+.trending-pp {
+    justify-self: center;
+}
+
+.trending-description {
+    color: rgb(136, 136, 136);
+}
+
