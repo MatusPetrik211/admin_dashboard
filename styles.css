@@ -57,10 +57,19 @@ header {
 #search {
     background-color: var(--grey-blue);
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
 
     width: clamp(200px, 50vw, 500px);
     height: 30px;
+}
+
+header img:hover {
+    cursor: pointer;
+    border: 2px var(--white) solid;
+}
+
+#search:focus {
+    outline: 2px var(--blue) solid;
 }
 
 .header-bottom {
@@ -91,6 +100,18 @@ header {
     width: 100px;
 }
 
+button:hover {
+    background-color: #02ccff;
+    color: #f7f9fc;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+button:active {
+    background-color: #0094b9;
+    cursor: pointer;
+}
+
 .header-bottom-left {
     display: grid;
     align-items: center;
@@ -118,6 +139,16 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 45px; 
+}
+
+aside h1:hover {
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+aside h1:active {
+    color: rgb(226, 226, 226);
+    cursor: pointer;
 }
 
 .aside-grid {
@@ -181,6 +212,11 @@ main {
     padding: 15px 20px;
 }
 
+.project img:hover {
+    cursor: pointer;
+    border: 2px var(--white) solid;
+}
+
 .project-description {
     font-size: 18px;
 }
@@ -209,9 +245,19 @@ main {
     height: 80%;
 }
 
+.trending-container > div:hover {
+    cursor: pointer;
+    color: var(--text-grey);
+}
+
 .trending-pp {
     justify-self: center;
     align-self: center;
     margin-top: 2px;
+}
+
+.trending-pp:hover {
+    cursor: pointer;
+    border: 2px var(--white) solid;
 }
 
